@@ -1,0 +1,512 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://nbasic.net/apps/tutorial_learn.html
+Subject: Programming tutorial
+Date: Fri, 5 Jun 2020 20:16:27 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--OXD09zVnY7uL7ZSiZVfvSeToM8bbEJCwFzzR1gmZbN----"
+
+
+------MultipartBoundary--OXD09zVnY7uL7ZSiZVfvSeToM8bbEJCwFzzR1gmZbN----
+Content-Type: text/html
+Content-ID: <frame-FA54CA06D6FAD2F1A9E984328015B5AF@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://nbasic.net/apps/tutorial_learn.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-d1f24aa4-5c91-40e9-a6c3-6ea3f52464dd@mhtml.blink" /><title>Program=
+ming tutorial</title>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1.0=
+">
+<meta name=3D"description" content=3D"An interactive programming tutorial -=
+ the examples are written in a simplified programming language with a focus=
+ on graphics">
+<link rel=3D"icon" href=3D"https://nbasic.net/easy.png" type=3D"image/x-png=
+">
+
+</head><body><div id=3D"tut"><h3>An interactive programming tutorial</h3><p=
+>When programming, you tell the computer with a special code what to do.</p=
+><h3>Graphics</h3><p>First we look at the commands that can be used to crea=
+te graphics on the screen.</p><canvas width=3D"600" height=3D"600" style=3D=
+"margin-bottom: 12px; border: 0px;"></canvas><p>The drawing area is 100 tim=
+es 100 units. The origin is top left. The first value (the X coordinate) is=
+ the distance from the left edge, the second value (the Y coordinate) is th=
+e distance from the top edge.</p><div class=3D"flex"><div><button style=3D"=
+float: right;">Run</button><button class=3D"stop" style=3D"float: right; di=
+splay: none;">Stop</button><pre contenteditable=3D"true" autocapitalize=3D"=
+false" spellcheck=3D"false" style=3D"min-height: 310px;"><b>move</b> 10 20
+<b>line</b> 50 40
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>We set the drawing pen with <tt>move</tt> to position (10 20), that is 1=
+0 from the left and 20 from above. From there, we draw with <tt>line</tt> a=
+ line to position (50 40).</p><hr><p>Try to finish drawing the square!</p><=
+div class=3D"flex"><div><button style=3D"float: right;">Run</button><button=
+ class=3D"stop" style=3D"float: right; display: none;">Stop</button><pre co=
+ntenteditable=3D"true" autocapitalize=3D"false" spellcheck=3D"false" style=
+=3D"min-height: 310px;"><b>move</b> 10 20
+<b>line</b> 30 20
+<b>line</b> 30 40
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>You can start the program with the <tt>Run</tt> button, with <tt>Ctrl+R<=
+/tt> or with <tt>Ctrl+Enter</tt>.</p><hr><p>With the command <tt>rect</tt> =
+you can draw filled rectangles. The parameters specify the width and height=
+.</p><p><tt>color</tt> sets the drawing color. <tt>color 900</tt>, for exam=
+ple, is a rich red color.</p><div class=3D"flex"><div><button style=3D"floa=
+t: right;">Run</button><button class=3D"stop" style=3D"float: right; displa=
+y: none;">Stop</button><pre contenteditable=3D"true" autocapitalize=3D"fals=
+e" spellcheck=3D"false" style=3D"min-height: 310px;"><b>color</b> 900
+<b>move</b> 10 10
+<b>rect</b> 20 20
+#=20
+<b>color</b> 993
+<b>move</b> 40 50
+<b>rect</b> 40 40
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>There are 1000 possible colors - from 000 to 999, mixed from the primary=
+ colours red, green and blue. The left digit specifies the red component, t=
+he middle digit the green component and the right digit the blue component.=
+</p><canvas width=3D"600" height=3D"396" style=3D"margin-bottom: 12px; bord=
+er: 0px; height: 211.2px;"></canvas><hr><p>Drawing a house</p><div class=3D=
+"flex"><div><button style=3D"float: right;">Run</button><button class=3D"st=
+op" style=3D"float: right; display: none;">Stop</button><pre contenteditabl=
+e=3D"true" autocapitalize=3D"false" spellcheck=3D"false" style=3D"min-heigh=
+t: 310px;"><b>move</b> 5 5
+<b>textsize</b> 8
+<b>text</b> "<i>MY HOUSE</i>"
+# <i>fassad</i>
+<b>color</b> 993
+<b>move</b> 15 55
+<b>rect</b> 60 45
+# <i>roof</i>
+<b>color</b> 722
+<b>polygon</b> [ 45 30 10 55 80 55 ]
+# <i>windows</i>
+<b>color</b> 555
+<b>move</b> 25 60
+<b>rect</b> 10 10
+<b>move</b> 25 80
+<b>rect</b> 10 10
+<b>move</b> 55 60
+<b>rect</b> 10 10
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p><tt>text</tt> writes a text to the drawing area. <tt>polygon [x1 y1 x2 y=
+2 ..]</tt> draws a filled polygon with the given coordinates.</p><p><tt>Tas=
+k:</tt> Draw the missing door.</p><hr><p>The command <tt>circle</tt> draws =
+a filled circle on the current position.</p><p><tt>linewidth</tt> sets the =
+line width. The lines are rounded at the ends.</p><div class=3D"flex"><div>=
+<button style=3D"float: right;">Run</button><button class=3D"stop" style=3D=
+"float: right; display: none;">Stop</button><pre contenteditable=3D"true" a=
+utocapitalize=3D"false" spellcheck=3D"false" style=3D"min-height: 310px;"><=
+b>move</b> 10 20
+<b>circle</b> 4
+<b>move</b> 30 20
+<b>circle</b> 6
+#=20
+<b>linewidth</b> 3
+<b>move</b> 10 40
+<b>line</b> 30 40
+#=20
+<b>linewidth</b> 8
+<b>color</b> 900
+<b>move</b> 10 60
+<b>line</b> 25 60
+#=20
+<b>color</b> 333
+<b>move</b> 10 80
+<b>line</b> 15 80
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p><tt>Task:</tt> Draw this car.</p><canvas width=3D"600" height=3D"144" st=
+yle=3D"margin-bottom: 12px; border: 0px; height: 76.8px;"></canvas><h3>Calc=
+ulating, variables</h3><p>With <tt>print</tt> (or <tt>pr</tt>) you can prin=
+t numbers and text in the text output window.</p><div class=3D"flex"><div><=
+button style=3D"float: right;">Run</button><button class=3D"stop" style=3D"=
+float: right; display: none;">Stop</button><pre contenteditable=3D"true" au=
+tocapitalize=3D"false" spellcheck=3D"false"><b>print</b> 7 * 8 + 2
+<b>pr</b> 13 * 7
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<hr><p>You can store a number in a variables and then work with this variab=
+le.</p><div class=3D"flex"><div><button style=3D"float: right;">Run</button=
+><button class=3D"stop" style=3D"float: right; display: none;">Stop</button=
+><pre contenteditable=3D"true" autocapitalize=3D"false" spellcheck=3D"false=
+">a =3D 4
+a =3D 2 * a
+<b>print</b> a
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<hr><p>Strings are texts enclosed in quotation marks. The <tt>&amp;</tt> ch=
+aracter can be used to concatenate strings. Numbers are automatically conve=
+rted to strings.</p><div class=3D"flex"><div><button style=3D"float: right;=
+">Run</button><button class=3D"stop" style=3D"float: right; display: none;"=
+>Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false" spellc=
+heck=3D"false">a =3D 5
+<b>print</b> a &amp; "<i> ^ 2 =3D </i>" &amp; a * a
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<hr><p>A variable can easily be incremented by a value: <tt>a +=3D x</tt> i=
+s short for <tt>a =3D a + x</tt></p><div class=3D"flex"><div><button style=
+=3D"float: right;">Run</button><button class=3D"stop" style=3D"float: right=
+; display: none;">Stop</button><pre contenteditable=3D"true" autocapitalize=
+=3D"false" spellcheck=3D"false">a =3D 1
+a +=3D 1
+<b>print</b> a
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<h3>Conditional statements, loops</h3><p>With <tt>if</tt> you can make the =
+execution of actions dependent on a comparison. <tt>end</tt> (or a dot) mar=
+ks the end of the dependent actions.</p><div class=3D"flex"><div><button st=
+yle=3D"float: right;">Run</button><button class=3D"stop" style=3D"float: ri=
+ght; display: none;">Stop</button><pre contenteditable=3D"true" autocapital=
+ize=3D"false" spellcheck=3D"false">a =3D 7
+a =3D 10 * a
+<b>if</b> a &gt; 20
+  <b>print</b> "<i>WOW!</i>"
+  <b>print</b> "<i>This number is large.</i>"
+<b>end</b>
+<b>print</b> a
+</pre></div><div><textarea readonly=3D"" rows=3D"6"></textarea></div></div>=
+<canvas width=3D"600" height=3D"600" style=3D"margin-bottom: 12px; border: =
+0px;"></canvas><hr><p>The block after <tt>else</tt> is executed if the cond=
+ition is not fulfilled.</p><div class=3D"flex"><div><button style=3D"float:=
+ right;">Run</button><button class=3D"stop" style=3D"float: right; display:=
+ none;">Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false"=
+ spellcheck=3D"false">a =3D 7
+<b>if</b> a &gt; 20
+  <b>print</b> "<i>This number is large.</i>"
+<b>else</b>
+  <b>print</b> "<i>This number is not large.</i>"
+<b>end</b>
+<b>print</b> a
+</pre></div><div><textarea readonly=3D"" rows=3D"6"></textarea></div></div>=
+<hr><p><tt>while</tt> works similar to <tt>if</tt>, except that the conditi=
+onal actions are executed again and again as long as the condition is fulfi=
+lled. This is called a <tt>loop</tt>.</p><div class=3D"flex"><div><button s=
+tyle=3D"float: right;">Run</button><button class=3D"stop" style=3D"float: r=
+ight; display: none;">Stop</button><pre contenteditable=3D"true" autocapita=
+lize=3D"false" spellcheck=3D"false">i =3D 1
+<b>while</b> i &lt;=3D 5
+  <b>print</b> i * i
+  i +=3D 1
+<b>end</b>
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<p><tt>Task:</tt> Write a program that adds up the numbers from 1 to 10. (R=
+esult: 55)</p><hr><p>A simple pattern</p><div class=3D"flex"><div><button s=
+tyle=3D"float: right;">Run</button><button class=3D"stop" style=3D"float: r=
+ight; display: none;">Stop</button><pre contenteditable=3D"true" autocapita=
+lize=3D"false" spellcheck=3D"false" style=3D"min-height: 310px;">i =3D 0
+<b>while</b> i &lt;=3D 90
+  <b>move</b> 0 i
+  <b>color</b> i
+  <b>rect</b> 100 10
+  i +=3D 10
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<h3>Subroutines</h3><p>With <tt>subr</tt> you can combine actions that can =
+be called from different places using <tt>call</tt>. This is called a <tt>s=
+ubroutine</tt>.</p><p>With <tt>func</tt> you can also create <tt>functions<=
+/tt> with parameters and local variables, but this is not covered in this b=
+eginner course.</p><div class=3D"flex"><div><button style=3D"float: right;"=
+>Run</button><button class=3D"stop" style=3D"float: right; display: none;">=
+Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false" spellch=
+eck=3D"false"><b>subr</b> square
+  sq =3D i * i
+  <b>print</b> i &amp; "<i>=C2=B2 =3D </i>" &amp; sq
+<b>end</b>
+#=20
+# <i>calculate the square of 3</i>
+i =3D 3
+<b>call</b> square
+#=20
+# <i>calculate the square of 7</i>
+i =3D 7
+<b>call</b> square
+</pre></div><div><textarea readonly=3D"" rows=3D"11"></textarea></div></div=
+><p>The <tt>#</tt> character allows you to insert comments into the program=
+.</p><h3>Animation</h3><p>A moving car - how does it work?</p><p>Draw a car=
+, wait briefly, clear the screen, move the position slightly, draw again, a=
+nd so on. This creates the impression of movement.</p><p>The waiting time i=
+n <tt>sleep</tt> is specified in seconds.</p><div class=3D"flex"><div><butt=
+on style=3D"float: right;">Run</button><button class=3D"stop" style=3D"floa=
+t: right; display: none;">Stop</button><pre contenteditable=3D"true" autoca=
+pitalize=3D"false" spellcheck=3D"false" style=3D"min-height: 310px;">x =3D =
+-15
+<b>while</b> x &lt;=3D 100
+  # <i>clear the drawing area</i>
+  <b>clear</b>
+  # <i>draw the car at position x</i>
+  <b>linewidth</b> 8
+  <b>color</b> 333
+  <b>move</b> x + 9 86
+  <b>line</b> x + 13 86
+  <b>color</b> 900
+  <b>move</b> x + 4 91
+  <b>line</b> x + 18 91
+  <b>color</b> 333
+  <b>move</b> x + 5 97
+  <b>circle</b> 3.5
+  <b>move</b> x + 16 97
+  <b>circle</b> 3.5
+  # <i>wait half a second</i>
+  <b>sleep</b> 0.5
+  # <i>change drawing position</i>
+  x +=3D 5
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p><tt>Task 1:</tt> Try to make the animation smoother by changing the posi=
+tion by a lower value and showing the car for a shorter time.</p><p><tt>Tas=
+k 2:</tt> Stop the car before it touches the right edge.</p><p><tt>Task 3:<=
+/tt> Let the car drive back.</p><p><tt>Task 4:</tt> Draw the house from abo=
+ve as background.</p><hr><p>To make the animation smoother, we need to upda=
+te the image more often and draw on intermediate positions, not only on int=
+eger values.</p><p>Variables that can store intermediate values (floating p=
+oint numbers) are called floating point variables. These end with the <tt>#=
+</tt> character.</p><div class=3D"flex"><div><button style=3D"float: right;=
+">Run</button><button class=3D"stop" style=3D"float: right; display: none;"=
+>Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false" spellc=
+heck=3D"false" style=3D"min-height: 310px;">x# =3D -15
+<b>while</b> x# &lt; 100
+  <b>clear</b>
+  # <i>here is something missing</i>
+  <b>move</b> x# + 5 97
+  <b>circle</b> 3.5
+  <b>move</b> x# + 16 97
+  <b>circle</b> 3.5
+  <b>sleep</b> 0.01
+  x# +=3D 0.2
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<h3>Event-driven programming</h3><p>In event-driven programming, a program =
+routine is executed when a specific event, such as pressing the mouse butto=
+n, occurs.</p><p>We create a simple painting program.</p><div class=3D"flex=
+"><div><button style=3D"float: right;">Run</button><button class=3D"stop" s=
+tyle=3D"float: right; display: none;">Stop</button><pre contenteditable=3D"=
+true" autocapitalize=3D"false" spellcheck=3D"false" style=3D"min-height: 31=
+0px;"><b>linewidth</b> 4
+<b>color</b> 900
+#=20
+<b>on</b> <b>mouse_down</b>
+  down =3D 1
+  <b>move</b> <b>mouse_x</b> <b>mouse_y</b>
+  <b>circle</b> 2
+<b>end</b>
+<b>on</b> <b>mouse_up</b>
+  down =3D 0
+<b>end</b>
+<b>on</b> <b>mouse_move</b>
+  <b>if</b> down =3D 1
+    <b>line</b> <b>mouse_x</b> <b>mouse_y</b>
+  <b>end</b>
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>The <tt>mouse</tt> events are triggered after the corresponding mouse ac=
+tions. <tt>mouse_x</tt> and <tt>mouse_y</tt> return the mouse position.</p>=
+<hr><p>You can also handle keyboard events.</p><div class=3D"flex"><div><bu=
+tton style=3D"float: right;">Run</button><button class=3D"stop" style=3D"fl=
+oat: right; display: none;">Stop</button><pre contenteditable=3D"true" auto=
+capitalize=3D"false" spellcheck=3D"false" style=3D"min-height: 310px;"><b>o=
+n</b> <b>key</b>
+  <b>if</b> <b>keyb_key</b> =3D "<i>r</i>"
+    <b>color</b> 900
+  <b>elif</b> <b>keyb_key</b> =3D "<i>g</i>"
+    <b>color</b> 090
+  <b>else</b>
+    <b>color</b> 777
+  <b>end</b>
+  <b>rect</b> 100 100
+  <b>color</b> 000
+  <b>text</b> <b>keyb_key</b>
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>Use the keyboard keys to change the colors of the previous painting prog=
+ram!</p><hr><p>The <tt>animate</tt> event occurs after each screen refresh.=
+ Perfect for letting the car drive.</p><div class=3D"flex"><div><button sty=
+le=3D"float: right;">Run</button><button class=3D"stop" style=3D"float: rig=
+ht; display: none;">Stop</button><pre contenteditable=3D"true" autocapitali=
+ze=3D"false" spellcheck=3D"false" style=3D"min-height: 310px;"><b>floatvars=
+</b>
+dir =3D 1
+<b>on</b> <b>animate</b>
+  <b>if</b> x &gt; 79 <b>or</b> x &lt; -1
+    dir *=3D -1
+  <b>end</b>
+  <b>clear</b>
+  # <i>here is something missing</i>
+  <b>move</b> x + 5 97
+  <b>circle</b> 3.5
+  <b>move</b> x + 16 97
+  <b>circle</b> 3.5
+  x +=3D 0.4 * dir
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>By the command <tt>floatvars</tt> floating point variables are used by d=
+efault. Integer variables then end with the <tt>%</tt> character.</p><p>Try=
+ to control the speed with the keyboard keys!</p><h3>Random numbers, arrays=
+</h3><p>We draw a starry sky. The position and brightness of the stars are =
+generated randomly.</p><div class=3D"flex"><div><button style=3D"float: rig=
+ht;">Run</button><button class=3D"stop" style=3D"float: right; display: non=
+e;">Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false" spe=
+llcheck=3D"false" style=3D"min-height: 310px;"><b>rect</b> 100 100
+<b>color</b> 999
+<b>while</b> i &lt; 50
+  x =3D <b>random</b> 100
+  y =3D <b>random</b> 100
+  m =3D <b>random</b> 50
+  <b>move</b> x y
+  <b>circle</b> m / 100
+  i +=3D 1
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p><tt>random 100</tt> returns a random integer from 0 to 99.</p><hr><p>Now=
+ let's draw a starry sky from a star map. The X- and Y-positions and the br=
+ightness of the stars are in a list, more precisely in an array.</p><div cl=
+ass=3D"flex"><div><button style=3D"float: right;">Run</button><button class=
+=3D"stop" style=3D"float: right; display: none;">Stop</button><pre contente=
+ditable=3D"true" autocapitalize=3D"false" spellcheck=3D"false" style=3D"min=
+-height: 310px;">x[] =3D [ 7 81 86 76 50 55 23 77 17 23 16 93 91 13 27 44 2=
+9 93 1 53 26 38 35 23 54 85 33 87 7 13 2 20 18 ]
+#=20
+y[] =3D [ 87 71 50 85 35 58 9 76 8 81 14 52 63 42 5 75 83 87 69 61 56 68 28=
+ 39 79 64 6 25 34 48 89 8 28 ]
+#=20
+m[] =3D [ 55 37 37 36 35 34 33 33 33 33 32 32 31 30 28 28 27 27 26 25 24 23=
+ 23 23 22 22 22 22 21 21 20 20 20 ]
+#=20
+<b>rect</b> 100 100
+<b>color</b> 999
+i =3D 0
+<b>while</b> i &lt; <b>len</b> x[]
+  <b>move</b> x[i] y[i]
+  <b>circle</b> m[i] / 100
+  i +=3D 1
+<b>end</b>
+</pre></div><div><canvas width=3D"600" height=3D"600"></canvas></div></div>=
+<p>The field elements can be accessed using square brackets and a position =
+specification, also called index. The first element is at position 0. <tt>l=
+en</tt> returns the number of elements in the array.</p><hr><p><tt>Task 1:<=
+/tt> On the starry sky you can see the constellation <tt>Big Dipper</tt>. I=
+f you draw connected lines through the stars 3, 7, 1, 25, 12, 11, 2 and 25 =
+(position in the array), you can make it visible. The star at position 4 is=
+ the Pole Star (Polaris).</p><p><tt>Task 2:</tt> Connect the stars of the c=
+onstellation <tt>Cassiopeia</tt>, which can easily be recognized by its W-s=
+hape. To find the indices of the stars, output them using <tt>text i</tt> w=
+hen drawing the star map.</p><canvas width=3D"600" height=3D"600" style=3D"=
+margin-bottom: 12px; border: 0px; cursor: default;"></canvas><h3>Working wi=
+th arrays, sorting</h3><p>How can you find the smallest number in an array?=
+</p><p>First take the first element as the smallest number. Then go through=
+ all the numbers and compare them to the current smallest number. If a numb=
+er is smaller, it is the new smallest number.</p><div class=3D"flex"><div><=
+button style=3D"float: right;">Run</button><button class=3D"stop" style=3D"=
+float: right; display: none;">Stop</button><pre contenteditable=3D"true" au=
+tocapitalize=3D"false" spellcheck=3D"false">data[] =3D [ 44 72 55 26 27 4 7=
+7 5 ]
+min =3D data[0]
+i =3D 1
+<b>while</b> i &lt; <b>len</b> data[]
+  <b>if</b> data[i] &lt; min
+    min =3D data[i]
+  <b>end</b>
+  i +=3D 1
+<b>end</b>
+<b>print</b> min
+</pre></div><div><textarea readonly=3D"" rows=3D"9"></textarea></div></div>=
+<hr><p>Now we want to put the smallest number on the first position. For th=
+is we additionally remember the position of the smallest element. Then we j=
+ust have to copy the first element to the position of the smallest element =
+and put the smallest number to the first position.</p><div class=3D"flex"><=
+div><button style=3D"float: right;">Run</button><button class=3D"stop" styl=
+e=3D"float: right; display: none;">Stop</button><pre contenteditable=3D"tru=
+e" autocapitalize=3D"false" spellcheck=3D"false">data[] =3D [ 44 72 55 26 2=
+7 4 77 5 ]
+min =3D data[0]
+min_pos =3D 0
+i =3D 1
+<b>while</b> i &lt; <b>len</b> data[]
+  <b>if</b> data[i] &lt; min
+    min =3D data[i]
+    min_pos =3D i
+  <b>end</b>
+  i +=3D 1
+<b>end</b>
+data[min_pos] =3D data[0]
+data[0] =3D min
+<b>print</b> data[]
+</pre></div><div><textarea readonly=3D"" rows=3D"13"></textarea></div></div=
+><hr><p><tt>Task:</tt> We can move the smallest element to the first place.=
+ With the same procedure we can move the smallest element starting from the=
+ second position to the second position. When we did that for all positions=
+, the array is sorted.</p><div class=3D"flex"><div><button style=3D"float: =
+right;">Run</button><button class=3D"stop" style=3D"float: right; display: =
+none;">Stop</button><pre contenteditable=3D"true" autocapitalize=3D"false" =
+spellcheck=3D"false">data[] =3D [ 44 72 55 26 27 4 77 5 ]
+# <i>todo: sort</i>
+<b>print</b> data[]
+</pre></div><div><textarea readonly=3D"" rows=3D"4"></textarea></div></div>=
+<p></p><hr><p></p>The examples were created with <a target=3D"_blank" href=
+=3D"https://nbasic.net/">nbasic.net</a>. This tutorial is also integrated i=
+n the <a target=3D"_blank" href=3D"https://nbasic.net/ide/">IDE</a><p></p><=
+small>christof.kaser@gmail.com</small></div>
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--OXD09zVnY7uL7ZSiZVfvSeToM8bbEJCwFzzR1gmZbN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-d1f24aa4-5c91-40e9-a6c3-6ea3f52464dd@mhtml.blink
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); font: 16px / 1.5 Arial, sans-s=
+erif; margin-left: 10px; margin-right: 10px; max-width: 800px; }
+
+pre { white-space: pre-wrap; background-color: rgb(255, 255, 238); margin-l=
+eft: 0px; margin-top: 0px; border: 1px solid gray; border-radius: 5px; padd=
+ing: 5px; font: 14px / 1.3 monospace; width: calc(100vw - 400px); min-heigh=
+t: 90px; max-width: 380px; }
+
+textarea { background-color: rgb(255, 255, 238); margin-left: 12px; border:=
+ 1px solid gray; border-radius: 5px; padding: 5px; font: 14px / 1.3 "Courie=
+r New", monospace; width: 320px; resize: none; }
+
+textarea.run { background-color: rgb(238, 238, 221); }
+
+canvas.run { outline: rgb(255, 0, 0) solid 1px; }
+
+canvas { margin-left: 12px; border: 1px solid gray; width: 320px; height: 3=
+20px; }
+
+@media only screen and (max-width: 600px) {
+  textarea { margin-left: 0px; width: calc(100vw - 28px); max-width: 480px;=
+ }
+  pre { width: calc(100vw - 28px); max-width: 480px; }
+  canvas { margin-left: 0px; width: calc(100vw - 28px); height: calc(100vw =
+- 28px); max-width: 480px; }
+  body { margin-left: 8px; margin-right: 8px; }
+}
+
+h3 { background-color: rgb(187, 238, 187); padding: 5px 5px 5px 12px; }
+
+h3:not(:first-child) { margin-top: 40px; }
+
+tt { padding: 1px; background-color: rgb(221, 255, 221); }
+
+button { background-color: rgb(221, 255, 221); cursor: pointer; padding: 4p=
+x; font-size: 110%; border: 1px solid gray; border-radius: 5px; }
+
+button:enabled:hover { background-color: rgb(204, 238, 204); }
+
+button:enabled:active { background-color: rgb(68, 136, 68); }
+
+button.stop { display: none; margin-right: 8px; }
+
+pre i { color: rgb(0, 136, 0); }
+
+pre b { color: rgb(136, 34, 17); }
+
+hr { margin-top: 30px; margin-bottom: 30px; }
+
+span.high { background-color: rgb(255, 170, 170); }
+
+.flex { display: inline-flex; flex-wrap: wrap; }
+------MultipartBoundary--OXD09zVnY7uL7ZSiZVfvSeToM8bbEJCwFzzR1gmZbN------

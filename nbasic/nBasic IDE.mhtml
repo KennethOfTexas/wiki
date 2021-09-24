@@ -1,0 +1,629 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://nbasic.net/ide/
+Subject: nBasic IDE
+Date: Fri, 5 Jun 2020 16:58:08 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--BdIJo0gXYisuyMgqvFppJpXKZj9nR8H7lrIZvePSvr----"
+
+
+------MultipartBoundary--BdIJo0gXYisuyMgqvFppJpXKZj9nR8H7lrIZvePSvr----
+Content-Type: text/html
+Content-ID: <frame-0DA2AF506D0258C4B8FCD3C492525E7C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://nbasic.net/ide/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-890de9b1-95c9-4304-af2f-7b0c2c5bcdaf@mhtml.blink" /><title>nBasic =
+IDE</title>
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1.0=
+">
+<meta name=3D"description" content=3D"easy and fun browser-based programmin=
+g language to learn to programm">
+<link rel=3D"icon" href=3D"https://nbasic.net/ide/icon.png" type=3D"image/x=
+-png">
+<link rel=3D"manifest" href=3D"https://nbasic.net/ide/mfst.json">
+
+
+
+</head><body class=3D"nimbus-is-editor"><div id=3D"container" style=3D"disp=
+lay: inline-flex;">
+
+<div id=3D"doc" style=3D"width: 473px;">
+	<div class=3D"lnk" id=3D"notiUpd">Click here to update to new version<br><=
+br></div>
+	<div class=3D"tab">
+		<button id=3D"tab0" disabled=3D"">Tutor</button>
+		<button id=3D"tab1">Saved</button>
+		<button id=3D"tab2" style=3D"display:none">Edit</button>
+		<canvas id=3D"dragb" class=3D"drag" style=3D"float:right"></canvas>
+	</div>
+
+	<div id=3D"docx" tabindex=3D"0">
+		<div id=3D"tabl0" style=3D"display: inline;">
+			<button id=3D"tutchng" style=3D"display:none">Back</button>
+			<div id=3D"tut" class=3D"tut"><p>Easy and fun programming</p><h3>Tutoria=
+ls</h3><p><div class=3D"lnk">Learn programming</div></p><p><div class=3D"ln=
+k">Documentation - Code snippets</div></p><p><div class=3D"lnk">Functions a=
+nd recursion</div></p><p><div class=3D"lnk">Monte Carlo Methods</div></p><p=
+><div class=3D"lnk">Sorting algorithms</div></p><p><div class=3D"lnk">Makin=
+g a game</div></p><hr><h3>Demos</h3><button class=3D"tut">Load</button><pre=
+><b>for</b> i =3D 1 <b>to</b> 10
+  <b>print</b> i * i
+<b>end</b>
+</pre><button class=3D"tut">Load</button><pre><b>move</b> 50 50
+<b>color</b> 983
+<b>circle</b> 19
+<b>color</b> 000
+<b>move</b> 43 43
+<b>circle</b> 2
+<b>move</b> 57 43
+<b>circle</b> 2
+<b>linewidth</b> 2
+<b>curve</b> [ 43 57 50 63 57 57 ]
+<b>move</b> 24 17
+<b>text</b> "<i>Hello world</i>"
+</pre><button class=3D"tut">Load</button><pre><b>floatvars</b>
+rad =3D 12
+x =3D 50
+y =3D 15
+vx =3D 1.5
+<b>color</b> 700
+#=20
+<b>on</b> <b>animate</b>
+  <b>clear</b>
+  <b>move</b> x y
+  <b>circle</b> rad
+  <b>if</b> x &gt; 100 - rad <b>or</b> x &lt; rad
+    vx =3D -vx
+  <b>end</b>
+  x +=3D vx
+  <b>if</b> y &gt; 100 - rad
+    vy =3D -vy
+  <b>else</b>
+    vy +=3D 0.1
+  <b>end</b>
+  y +=3D vy
+<b>end</b>
+</pre><p></p><hr><a href=3D"https://nbasic.net/">More about nbasic.net</a><=
+p></p></div>
+			<button id=3D"tutchng2" style=3D"display:none">Back</button>
+		</div>
+
+		<div id=3D"tabl1" style=3D"display: none;">
+			<p>Programs can be stored locally within the browser</p>
+			<div id=3D"storage" class=3D"tut"><button class=3D"tut">Load</button><bu=
+tton class=3D"del">Delete</button><button class=3D"del">Expand</button><pre=
+>print "Hello Steve"</pre></div>
+		</div>
+	</div>
+</div>
+
+<div id=3D"incol" style=3D"width: 455px;">
+	<button id=3D"runBtn" style=3D"margin-left:20px">Run</button>
+	<button id=3D"stBtn" disabled=3D"">Save</button>
+	<button id=3D"moreBtn" class=3D"">More</button>
+
+	<button id=3D"expnd" style=3D"display: none;"></button>
+
+	<pre id=3D"inp" contenteditable=3D"true" autocomplete=3D"off" autocorrect=
+=3D"off" autocapitalize=3D"off" spellcheck=3D"false" style=3D"height: calc(=
+100% - 3.2em);"><b>for</b> i =3D 1 <b>to</b> 10
+  <b>print</b> i * i
+<b>end</b>
+</pre>
+
+	<span id=3D"moreSpn" style=3D"display:none">
+	<button id=3D"stepBtn">Trace</button>
+	<button id=3D"step2Btn" style=3D"display:none">Over</button>
+	<button id=3D"step3Btn" style=3D"display:none">Out</button>
+	<span id=3D"trSpn">
+		Delay:
+		<select id=3D"sel">
+			<option selected=3D"">Steps</option>
+			<option>0.1 s</option>
+			<option>0.2 s</option>
+			<option>0.4 s</option>
+			<option>0.8 s</option>
+		</select>
+	</span>
+	<button id=3D"urlBtn">URL</button>
+	<pre id=3D"dbg"></pre>
+	</span>
+</div>
+
+<div id=3D"outcol" style=3D"width: 410px;">
+	<div>
+		<canvas id=3D"dragb2" class=3D"drag" style=3D"margin-right:20px"></canvas=
+>
+		<span id=3D"labinp" style=3D"display:none">
+			<input type=3D"text" id=3D"input" maxlength=3D"50" style=3D"width:calc(1=
+00% - 120px)">
+		</span>
+		<button id=3D"fullBtn" style=3D"display: none;">Full</button>
+	</div>
+
+	<canvas id=3D"canv" width=3D"600" height=3D"600" style=3D"height: 410px; w=
+idth: 410px; cursor: default; display: none;" class=3D""></canvas>
+	<textarea id=3D"out" readonly=3D"" spellcheck=3D"false" class=3D"" style=
+=3D"height: 593px;"></textarea>
+</div>
+</div>
+
+
+
+<div class=3D"nsc-panel nsc-panel-compact nsc-hide">
+    <div class=3D"nsc-panel-move"></div>
+    <div class=3D"nsc-panel-tooltip">
+        <div class=3D"nsc-panel-tooltip-layout" layout=3D"row" layout-align=
+=3D"start center">CTRL+V to toggle the panel</div>
+    </div>
+
+    <div class=3D"nsc-panel-layout" flex=3D"" layout=3D"row" layout-align=
+=3D"start center">
+        <div class=3D"nsc-panel-groups" flex=3D"" layout=3D"row" layout-ali=
+gn=3D"start start">
+
+            <!-- group -->
+            <div class=3D"nsc-panel-group" flex=3D"none" layout=3D"row" lay=
+out-align=3D"start start">
+                <div class=3D"nsc-panel-button separated active">
+                    <div class=3D"nsc-panel-select" flex=3D"" layout=3D"row=
+">
+                        <div class=3D"nsc-panel-text nsc-noselect" flex=3D"=
+" layout=3D"row" layout-align=3D"center center">
+                            <span class=3D"nsc-icon nsc-icon-cursor-normal"=
+ data-i18n=3D"videoPanelSimpleCursor" data-event=3D"nimbus-editor-active-to=
+ols" data-event-param=3D"cursorRing">&nbsp;</span>
+                        </div>
+                        <div class=3D"nsc-panel-trigger">
+                            <span class=3D"nsc-icon nsc-icon-arrow">&nbsp;<=
+/span>
+                        </div>
+                    </div>
+                    <div class=3D"nsc-panel-dropdown to-top">
+                        <ul flex=3D"" layout=3D"row" layout-align=3D"start =
+center">
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-cursor-sha=
+de" data-i18n=3D"videoPanelFocusMouse" data-event=3D"nimbus-editor-active-t=
+ools" data-event-param=3D"cursorShadow">&nbsp;</span>
+                            </li>
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-cursor-cir=
+cle" data-i18n=3D"videoPanelAnimatedCursor" data-event=3D"nimbus-editor-act=
+ive-tools" data-event-param=3D"cursorRing">&nbsp;</span>
+                            </li>
+                            <!--<li class=3D"nsc-panel-dropdown-icon " flex=
+ layout=3D"row" layout-align=3D"start center">-->
+                            <!--<span class=3D"nsc-icon nsc-icon-cursor-tai=
+l"></span>-->
+                            <!--</li>-->
+                            <!--<li class=3D"nsc-panel-dropdown-icon " flex=
+ layout=3D"row" layout-align=3D"start center">-->
+                            <!--<span class=3D"nsc-icon nsc-icon-cursor-lon=
+g"></span>-->
+                            <!--</li>-->
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-cursor-nor=
+mal" data-i18n=3D"videoPanelSimpleCursor" data-event=3D"nimbus-editor-activ=
+e-tools" data-event-param=3D"cursorDefault">&nbsp;</span>
+                            </li>
+                            <!--<li class=3D"nsc-panel-dropdown-icon" flex =
+layout=3D"row" layout-align=3D"start center">-->
+                            <!--<span class=3D"nsc-icon nsc-icon-cursor-non=
+e" data-event=3D"nimbus-editor-active-tools" data-event-param=3D"cursorNone=
+"></span>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class=3D"nsc-panel-group" flex=3D"none" layout=3D"row" lay=
+out-align=3D"start start">
+                <button class=3D"nsc-panel-button" type=3D"button">
+                    <span class=3D"nsc-icon nsc-icon-pen" data-i18n=3D"vide=
+oPanelPen" data-event=3D"nimbus-editor-active-tools" data-event-param=3D"pe=
+n">&nbsp;</span>
+                </button>
+                <button class=3D"nsc-panel-button" type=3D"button">
+                    <span class=3D"nsc-icon nsc-icon-arrow-line" data-i18n=
+=3D"videoPanelArrow" data-event=3D"nimbus-editor-active-tools" data-event-p=
+aram=3D"arrow">&nbsp;</span>
+                </button>
+                <button class=3D"nsc-panel-button" type=3D"button">
+                    <span class=3D"nsc-icon nsc-icon-square" data-i18n=3D"v=
+ideoPanelSquare" data-event=3D"nimbus-editor-active-tools" data-event-param=
+=3D"square">&nbsp;</span>
+                </button>
+                <div class=3D"nsc-panel-button separated">
+                    <div class=3D"nsc-panel-select" flex=3D"" layout=3D"row=
+">
+                        <div class=3D"nsc-panel-text nsc-noselect" flex=3D"=
+" layout=3D"row" layout-align=3D"center center">
+                            <span class=3D"nsc-icon nsc-icon-attention" dat=
+a-i18n=3D"videoPanelMark" data-event=3D"nimbus-editor-active-tools" data-ev=
+ent-param=3D"notifRed">&nbsp;</span>
+                        </div>
+                        <div class=3D"nsc-panel-trigger">
+                            <span class=3D"nsc-icon nsc-icon-arrow">&nbsp;<=
+/span>
+                        </div>
+                    </div>
+                    <div class=3D"nsc-panel-dropdown to-top">
+                        <ul flex=3D"" layout=3D"row" layout-align=3D"start =
+center">
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-attention"=
+ data-i18n=3D"videoPanelMark" data-event=3D"nimbus-editor-active-tools" dat=
+a-event-param=3D"notifRed">&nbsp;</span>
+                            </li>
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-question" =
+data-i18n=3D"videoPanelQuestion" data-event=3D"nimbus-editor-active-tools" =
+data-event-param=3D"notifBlue">&nbsp;</span>
+                            </li>
+                            <li class=3D"nsc-panel-dropdown-icon" flex=3D""=
+ layout=3D"row" layout-align=3D"start center">
+                                <span class=3D"nsc-icon nsc-icon-done" data=
+-i18n=3D"videoPanelCheckmark" data-event=3D"nimbus-editor-active-tools" dat=
+a-event-param=3D"notifGreen">&nbsp;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=3D"nsc-panel-button assembled">
+                    <div class=3D"nsc-panel-select" flex=3D"" layout=3D"row=
+">
+                        <div class=3D"nsc-panel-text nsc-noselect" flex=3D"=
+" layout=3D"row" layout-align=3D"center center">
+							<span class=3D"nsc-icon nsc-icon-fill-none nsc-panel-icon-fill">
+								<span class=3D"nsc-panel-icon-fill-inner" id=3D"nsc_panel_button_co=
+lors" style=3D"background:#00FF00;" data-event=3D"nimbus-editor-active-colo=
+r" data-event-param=3D"#00FF00">&nbsp;</span>
+							</span>
+                        </div>
+                        <div class=3D"nsc-panel-trigger">
+                            <span class=3D"nsc-icon nsc-icon-arrow">&nbsp;<=
+/span>
+                        </div>
+                    </div>
+                    <div class=3D"nsc-panel-dropdown">
+                        <div class=3D"nsc-panel-drop-area">
+                            <div class=3D"nsc-panel-colors">
+
+                                <!-- picked -->
+                                <div class=3D"nsc-colors-picked">
+                                    <div class=3D"nsc-colors-picked-layout"=
+ flex=3D"" layout=3D"row" layout-align=3D"start start" layout-wrap=3D"">
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#000000">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #000000;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#0000FF">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #0000FF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#FF00FF">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #FF00FF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#00FFFF">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #00FFFF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#00FF00">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #00FF00;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#FFFF00">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #FFFF00;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#FF0000">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #FF0000;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class=3D"nsc-colors-picked-ite=
+m">
+                                            <button class=3D"nsc-colors-pic=
+ked-button" type=3D"button" data-event=3D"nimbus-editor-active-color" data-=
+event-param=3D"#FFFFFF">
+                                                <span class=3D"nsc-colors-p=
+icked-button-inner" style=3D"background: #FFFFFF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <!--<div class=3D"nsc-colors-picked=
+-item">-->
+                                        <!--<button class=3D"nsc-colors-pic=
+ked-button custom" type=3D"button"> -->
+                                        <!--<i class=3D"nsc-icon ic-color-c=
+ustom"></i> -->
+                                        <!--</button>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <!-- /picked -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class=3D"nsc-panel-group" flex=3D"none" layout=3D"row" lay=
+out-align=3D"start start">
+                <button class=3D"nsc-panel-button nsc-hide" type=3D"button"=
+>
+                    <span class=3D"nsc-icon nsc-icon-eraser" data-i18n=3D"v=
+ideoPanelClear" data-event=3D"nimbus-editor-active-tools" data-event-param=
+=3D"clear">&nbsp;</span>
+                </button>
+                <button class=3D"nsc-panel-button" type=3D"button">
+                    <span class=3D"nsc-icon nsc-icon-eraser-all" data-i18n=
+=3D"videoPanelClearAll" data-event=3D"nimbus-editor-active-tools" data-even=
+t-param=3D"clearAll">&nbsp;</span>
+                </button>
+                <button class=3D"nsc-panel-button" type=3D"button">
+                    <span class=3D"nsc-icon nsc-icon-webcam" data-i18n=3D"v=
+ideoPanelCamera" id=3D"nimbus_web_camera_toggle">&nbsp;</span>
+                </button>
+            </div>
+            <!-- /group -->
+        </div>
+
+        <div class=3D"nsc-panel-actions" flex=3D"none" layout=3D"row" layou=
+t-align=3D"start center">
+            <button class=3D"nsc-panel-button big" type=3D"button" id=3D"ns=
+c_panel_button_play" style=3D"display: none;">
+                <span class=3D"nsc-icon nsc-icon-play">&nbsp;</span>
+            </button>
+            <button class=3D"nsc-panel-button big" type=3D"button" id=3D"ns=
+c_panel_button_pause">
+                <span class=3D"nsc-icon nsc-icon-pause">&nbsp;</span>
+            </button>
+            <button class=3D"nsc-panel-button big" type=3D"button" id=3D"ns=
+c_panel_button_stop">
+                <span class=3D"nsc-icon nsc-icon-stop">&nbsp;</span>
+            </button>
+        </div>
+
+        <!-- panel togglers -->
+        <div class=3D"nsc-panel-togglers" layout=3D"row" layout-align=3D"st=
+art center" flex=3D"none">
+            <button class=3D"nsc-panel-toggle-button" type=3D"button">
+                <span class=3D"nsc-icon nsc-icon-panel-close" data-i18n=3D"=
+videoPanelHideShowPanel">&nbsp;</span>
+            </button>
+        </div>
+        <!-- /panel togglers -->
+
+    </div>
+</div>
+<div class=3D"nsc-video-editor nsc-hide events" style=3D"width: 1366px; hei=
+ght: 649px;"><canvas width=3D"1366" height=3D"649" style=3D"width: 1366px; =
+height: 649px; position: absolute; top: 0px; left: 0px; z-index: 0;"></canv=
+as><canvas width=3D"1366" height=3D"649" style=3D"width: 1366px; height: 64=
+9px; position: absolute; top: 0px; left: 0px; z-index: 1;"></canvas><canvas=
+ width=3D"1366" height=3D"649" style=3D"width: 1366px; height: 649px; posit=
+ion: absolute; top: 0px; left: 0px; z-index: 2;"></canvas></div><div class=
+=3D"nsc-content-camera nsc-hide">
+    <div class=3D"nsc-content-camera-buttons" flex=3D"none" layout=3D"row" =
+layout-align=3D"start start">
+        <button class=3D"nsc-content-camera-button" type=3D"button" id=3D"n=
+sc_video_camera_collapse" style=3D"display: none">
+            <span class=3D"nsc-icon nsc-icon-panel-collapse"></span>
+        </button>
+        <button class=3D"nsc-content-camera-button" type=3D"button" id=3D"n=
+sc_video_camera_expand">
+            <span class=3D"nsc-icon nsc-icon-panel-expand"></span>
+        </button>
+        <button class=3D"nsc-content-camera-button" type=3D"button" id=3D"n=
+sc_video_camera_close">
+            <span class=3D"nsc-icon nsc-icon-panel-close"></span>
+        </button>
+    </div>
+    <div class=3D"nsc-content-camera-container">
+        <div class=3D"nsc-content-camera-shadow"></div>
+    </div>
+</div>
+</body></html>
+------MultipartBoundary--BdIJo0gXYisuyMgqvFppJpXKZj9nR8H7lrIZvePSvr----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-890de9b1-95c9-4304-af2f-7b0c2c5bcdaf@mhtml.blink
+
+@charset "utf-8";
+
+html { height: calc(100% - 18px); width: 100%; }
+
+body { height: 100%; font: 0.95em / 1.45 Arial, sans-serif; }
+
+h3 { padding: 5px 5px 5px 12px; }
+
+hr { border: 1px solid rgb(136, 136, 136); margin-top: 6px; margin-bottom: =
+6px; }
+
+#container { height: 100%; width: 100%; display: none; }
+
+#doc { float: left; height: 100%; width: calc(((100% - 30em) - 30vw) - 10px=
+); margin-right: 4px; }
+
+#incol { float: left; height: 100%; width: 30em; margin-right: 4px; }
+
+#outcol { float: left; height: 100%; width: 30vw; }
+
+#docx { overflow-y: scroll; height: calc(100% - 2.5em); border: 1px solid r=
+gb(136, 136, 136); padding-left: 12px; padding-right: 12px; }
+
+.drag { float: left; height: 1.5em; width: 16px; cursor: col-resize; border=
+: 1px solid rgb(136, 136, 136); border-radius: 6px; margin: 2px; }
+
+#tutchng { margin-top: 8px; float: right; }
+
+pre { font: 13px / 1.3 monospace; border: 1px solid rgb(136, 136, 136); bor=
+der-radius: 5px; white-space: pre-wrap; overflow-wrap: break-word; }
+
+.tut hr { margin-bottom: 16px; }
+
+.tut pre { margin-left: 6px; margin-right: 6px; margin-top: 0px; padding: 5=
+px; }
+
+#inp { font-size: 14px; margin: 2px 0px 0px; width: calc(100% - 10px); heig=
+ht: calc(100% - 3.2em); overflow: auto; padding: 4px; outline: none; white-=
+space: pre; }
+
+#dbg { margin: 2px 0px 0px; width: calc(100% - 10px); height: calc(30% - 3e=
+m); overflow: auto; padding: 4px; outline: none; }
+
+tt { border: 1px solid; padding: 1px; font-size: 120%; }
+
+#out { font: 13px / 1.2 monospace; resize: none; border: 1px solid rgb(136,=
+ 136, 136); width: calc(100% - 4px); height: calc((100% - 30vw) - 30px); pa=
+dding: 2px; border-radius: 5px; outline: none; }
+
+canvas { display: inline; }
+
+#canv { border: 1px solid rgb(136, 136, 136); width: 100%; color: rgb(0, 0,=
+ 0); background-color: rgb(204, 204, 204); vertical-align: top; }
+
+select { padding: 3px; margin: 2px; font-size: 80%; border: 1px solid rgb(2=
+04, 204, 204); cursor: pointer; -webkit-appearance: none; }
+
+button { padding: 5px; margin: 2px; font-size: 80%; font-weight: bold; bord=
+er: 1px solid rgb(136, 136, 136); border-radius: 5px; }
+
+button.tut { margin-right: 7px; margin-left: 0px; margin-top: 1px; float: r=
+ight; }
+
+button.del { margin-right: 1px; margin-left: 0px; margin-top: 1px; float: r=
+ight; }
+
+.tab { overflow: hidden; }
+
+.tab button { float: left; padding: 6px 12px; margin: 2px -10px 0px 0px; bo=
+rder-radius: 12px 12px 0px 0px; font-size: 90%; position: relative; z-index=
+: 1; }
+
+.tab button:disabled { font-size: 100%; margin-top: 0px; z-index: 10; }
+
+button:enabled { cursor: pointer; }
+
+#expnd { float: right; width: 20px; height: 20px; }
+
+.lnk { cursor: pointer; text-decoration: underline; }
+
+#notiUpd { display: none; }
+
+#fullBtn { float: right; }
+
+#urlBtn { float: right; }
+
+a:hover { background-color: rgb(102, 102, 102); }
+
+a { color: rgb(221, 221, 221); }
+
+a:visited { color: rgb(221, 221, 221); }
+
+body { background-color: rgb(85, 85, 85); color: rgb(255, 255, 255); }
+
+h3 { background-color: rgb(85, 85, 85); color: rgb(255, 255, 255); }
+
+#docx { background-color: rgb(17, 17, 17); }
+
+.drag { background-color: rgb(119, 119, 119); }
+
+#inp { background-color: rgb(0, 0, 0); }
+
+pre i { color: rgb(170, 255, 170); }
+
+pre b { color: rgb(255, 255, 136); }
+
+.tut pre { background-color: rgb(51, 51, 51); }
+
+tt { background-color: rgb(85, 85, 85); color: rgb(238, 255, 238); border-c=
+olor: rgb(136, 136, 136); }
+
+#out { background-color: rgb(34, 34, 34); color: rgb(221, 221, 221); }
+
+#out.run { background-color: rgb(51, 51, 51); }
+
+canvas.run { outline: rgb(255, 0, 0) solid 1px; }
+
+.tab button:enabled { background-color: rgb(85, 85, 85); color: rgb(136, 13=
+6, 136); }
+
+.tab button:hover:enabled { background-color: rgb(34, 34, 34); }
+
+.tab button:disabled { background-color: rgb(34, 34, 34); color: rgb(221, 2=
+21, 221); }
+
+button:enabled { background-color: rgb(119, 119, 119); color: rgb(238, 238,=
+ 238); }
+
+button:disabled { background-color: rgb(68, 68, 68); color: rgb(119, 119, 1=
+19); }
+
+button:hover:enabled { background-color: rgb(153, 153, 153); }
+
+button:active:enabled { background-color: rgb(187, 187, 187); }
+
+#moreBtn.act { background-color: rgb(170, 170, 170); }
+
+#dbg { background-color: rgb(34, 34, 34); }
+
+.lnk:hover { background-color: rgb(102, 102, 102); }
+
+select { background-color: rgb(119, 119, 119); color: rgb(238, 238, 238); }
+
+select:hover:enabled { background-color: rgb(153, 153, 153); }
+
+span.high { background-color: rgb(238, 51, 51); }
+------MultipartBoundary--BdIJo0gXYisuyMgqvFppJpXKZj9nR8H7lrIZvePSvr------

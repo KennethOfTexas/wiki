@@ -1,0 +1,45 @@
+
+<!doctype html>
+<meta charset=utf-8><title>Programming tutorial</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="An interactive programming tutorial - the examples are written in a simplified programming language with a focus on graphics">
+<link rel="icon" href="../easy.png" type="image/x-png">
+
+<div id=tut><b>Loading ...</b></div>
+<script src=easy.js></script>
+<script src=easy_tut.js></script>
+  <body style="background-color:#262626;">
+<script>
+
+
+txt_locale="de"
+
+txt_tutor=
+
+##
+col[] = [ 900 090 009 990 909 099 999 777 444 000 600 960 696 432 996 966 509 765 ]
+textsize 6
+for i range len col[]
+  h = i mod 4
+  y# = h * 16.5
+  h = i / 4
+  x# = h * 25
+  move x# y#
+  color col[i]
+  rect 25 16.5
+  move x# + 7 y# + 5
+  s$ = col[i]
+  if col[i] <= 9
+    s$ = "00" & s$
+  elif col[i] <= 99
+    s$ = "0" & s$
+  .
+  color 000
+  if col[i] = 0 or col[i] = 432
+    color 888
+  .
+  text s$
+.
+
+
+</script>
