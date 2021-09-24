@@ -1,0 +1,52 @@
+body {
+  background-color:#262626;
+  color:#e3dad1;
+}
+li {
+    list-style: none;
+}
+li:before {
+    content: "✓ ";
+}
+
+input {
+    border: none;
+    width: 80px;
+    font-size: 14px;
+    color:white;
+    padding: 2px;
+}
+
+input:hover {
+    background-color: #eee;
+}
+
+input:focus {
+    background-color: #5c3601;
+}
+
+input:not(:focus) {
+    text-align: right;
+    background-color: #423c35;
+    font 
+}
+
+table {
+    border-collapse: collapse;  
+}
+
+td {
+    border: 1px solid #999;
+    padding: 0;
+}
+
+tr:first-child td, td:first-child {
+    background-color: #54412a;
+    padding: 1px 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    font-size: 80%;
+}

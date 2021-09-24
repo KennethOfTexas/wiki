@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Very basic examples &#8212; ProbLog: Probabilistic Programming</title>
+ 
+    <link rel="stylesheet" type="text/css" href="https://dtai.cs.kuleuven.be/problog/_static/graphviz.css" />
+    <link rel="stylesheet" href="https://dtai.cs.kuleuven.be/problog/_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://dtai.cs.kuleuven.be/problog/_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://dtai.cs.kuleuven.be/problog/_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="https://dtai.cs.kuleuven.be/problog/_static/problog.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="https://dtai.cs.kuleuven.be/problog/_static/documentation_options.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/jquery.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/underscore.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/doctools.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/problog_editor_advanced.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/ace.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/mode-problog.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://dtai.cs.kuleuven.be/problog/_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="More examples" href="02_more.html" />
+    <link rel="prev" title="Viral Marketing" href="../dtproblog/02_viral.html" />
+      
+    <link rel="stylesheet" href = "post.css">
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body style="background-color:#262626;">
+<div id="wrapper">
+
+
+
+
+<div id="page-wrapper">
+<div class="container">
+  <div class="row"> 
+    <div class="col-md-8 content">
+        
+
+      
+  <div class="section" id="very-basic-examples">
+
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">
+% EXISTENTIAL POSTULATES
+% =================================
+
+0.5::simulation. 
+% 50% chance that we are living in a simulation.
+
+0.9::aboutIntelligence :- simulation. 
+% 90% chance that if we're in a simulation, 
+% the point has something to do with intelligence.
+
+0.9::panspermia. 
+% There is a 90% chance that our 
+% abiogenesis did not happen on earth.
+
+0.7::doublePanspermia :- panspermia.
+% 70% chance that if the abiogenesis was exogenous,
+% so was the capture of mitochondria.
+
+0.7:: gfMitochondria :- \+ doublePanspermia.
+% 70% chance the great filter is mitochondria
+% IF the mitochondrial symbiosis evolved here.
+% darkforest, zoo, etc
+
+0.8::lifeEvidence2035 :- panspermia.
+% 80% chance we'll find convincing (to me)
+% evidence of the influence of organic 
+% processes on extraterrestrial atmospheres 
+% with the James Webb telescope 
+% if even non-mitochondrial panspermia is
+% true.
+
+0.8::deliberateSilence :- doublePanspermia.
+% 80% chance that the Great Silence is
+% intentional if mitochondrial life came
+% from afield (and therefore exists elsewhere 
+% and spreads). This is because there have been 
+% multiple evolutionary paths on earth to complex
+% brains, and I assume that where there is mitochondria
+% intelligence develops after sufficient time. 
+
+1/15:: gfDarkForest; 14/15:: elderRace :- deliberateSilence.
+% There's a small chance that the Dark Forest
+% scenario is the reason, if the silence is deliberate.
+% I give it a low chance because I'd think if
+% exterminations were common, someone would have already 
+% gotten us, since we've been casting biosignatures
+% for billions of years.
+% The alternative, to me, is that a race with a million
+% -year lead on the others got the upper hand and effected
+% the evolution and norms of all followers.
+
+observed :- elderRace.
+% We have been observed if there is an elder race.
+
+gfSomethingElse :- \+ gfDarkForest, \+ elderRace, \+gfMitochondria.
+% if the apparent great filter isn't these things, it's something else.
+
+
+% AI PREDICTIONS
+% ================================
+
+0.51::turingBy2029.
+% The Turing Test will be passed by 2029
+
+
+% COVID THOUGHTS
+% =================================
+
+0.10::greaterDepression.
+% 10% chance of a greater depression.
+
+0.15::massViolence.
+% 15% chance (metaculus number) of rioting, etc
+
+
+% FRIENDS
+%==================================
+
+0.20::kenRaileeBreakUpBy2021.
+% We break up this year (5.10.20)
+
+0.45::chandlerToYantisBySept.
+% Chandler actually follows through with a lifeplan. 
+% Highest chance ever. (5.10.20)
+
+0.70::scarletLeaves02 :- chandlerToYantisBySept.
+% If they do this, it won't end well. (5.10.20) 
+% She ditches by next February.
+
+% ME
+% =================================
+0.2::shirtSuccess.
+% my enterprise goes well
+0.45::ntiBack.
+% NTI takes me back
+0.30::goodNTI :- ntiBack. 
+% they pay enough
+0.10::financialDeusEx :- \+goodNTI.
+% something else randomly avails
+surviveHere :- shirtSuccess; goodNTI; financialDeusEx.
+% I stay here.
+
+
+
+
+kenChandlerHere :- surviveHere, chandlerToYantisBySept.
+
+
+query(elderRace).
+query(gfDarkForest).
+query(gfMitochondria).
+query(gfSomethingElse).
+query(scarletLeaves02).
+query(surviveHere).
+query(kenChandlerHere).
+
+</div></div><hr class="docutils" /></div>
+
+
+        
+<script type="text/javascript">
+    $(document).ready(function() {
+        problog.init();
+    });
+</script>
+</div>
+    </div>  <!-- wrapper -->
+  </body>
+</html>

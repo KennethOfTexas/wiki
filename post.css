@@ -1,0 +1,29 @@
+.problog-edit-editor{
+}
+
+.btn{
+    background-image:linear-gradient(to bottom,#d9a407 0,#ba8d07 100%);
+    padding-top:.5em;
+    padding-bottom:.5em;
+    margin-top:1.2em;
+    margin-bottom:1.2em;
+}
+
+.btn:hover{
+    background-image:linear-gradient(to bottom,#d9a407 0,#ba8d07 100%);
+    background-color: #ba8d07;
+    
+}
+.btn:focus{
+    background-image:linear-gradient(to bottom,#d9a407 0,#ba8d07 100%);
+    background-color: #ba8d07;
+   
+}
+
+.panel-body{
+    padding:0px;
+}
+
+.col-md-12, .col-xs-12{
+    padding:0px;
+}

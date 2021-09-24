@@ -1,0 +1,28 @@
+
+<!doctype html>
+<meta charset=utf-8><title>Recursion</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="../icon.png" type="image/x-png">
+
+<div id=tut><b>Loading ...</b></div>
+<script src=easy.js></script>
+<script src=easy_tut.js></script>
+
+<script>
+
+
+#
+func gcd a b . res .
+  while b <> 0
+    h = b
+    b = a mod b
+    a = h
+  .
+  res = a
+.
+call gcd 120 35 r
+print r
+
+
+</script>
+
